@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    
+    "sourceMap": true,
+    "allowJs": true,
+
+    "target": "es5",
+    // "baseUrl": "./",
+
+    /* The directory where the build contents will be stored */
+    "outDir": "./dist",
+
+    "moduleResolution": "node",
+    "lib": ["es2015"],
+
+    "rootDir": "./",
+    "resolveJsonModule": true,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "skipLibCheck": true
+  },
+  /* Directories to include in the TypeScript build */
+  /* In our project, we want to build and deploy our src code */
+  "include": ["src", "package.json", "package-lock.json"],
+
+  /* Directories to exclude in the TypeScript build */
+  "exclude": ["node_modules", "*/*/*.test.ts", "*/*/test.ts", ".build"]
+}
